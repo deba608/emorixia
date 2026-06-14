@@ -10,28 +10,28 @@ const steps = [
     title: "Send Photos",
     description: "Upload your favorite photos and share your stories with us via our form or WhatsApp. Include any texts or personal layouts you prefer.",
     icon: ImageIcon,
-    color: "bg-primary text-white",
+    color: "bg-rose-100/60 text-primary border border-rose-200/40",
   },
   {
     step: "02",
     title: "We Design",
     description: "Our designer team carefully curates your memories, formatting layout, typography, and visual edits to create a gorgeous luxury design.",
     icon: Paintbrush,
-    color: "bg-accent text-primary",
+    color: "bg-pink-100/60 text-primary border border-pink-200/40",
   },
   {
     step: "03",
     title: "Approve Preview",
     description: "We send you a complete digital preview of the keepsake. You review and suggest revisions. We print only when you are 100% satisfied.",
     icon: CheckCircle,
-    color: "bg-secondary text-primary",
+    color: "bg-rose-100/60 text-primary border border-rose-200/40",
   },
   {
     step: "04",
     title: "Delivered Across India",
     description: "Printed on premium cotton, linen, or natural textured papers, safely packed and shipped to your address anywhere in India.",
     icon: Truck,
-    color: "bg-primary text-white",
+    color: "bg-pink-100/60 text-primary border border-pink-200/40",
   },
 ];
 
@@ -51,9 +51,9 @@ export function ProcessTimeline() {
   });
 
   return (
-    <div ref={containerRef} className="relative w-full max-w-5xl mx-auto px-6 py-12">
+    <div ref={containerRef} className="relative w-full max-w-5xl mx-auto px-6 py-20 md:py-24">
       {/* Central Connector Line */}
-      <div className="absolute left-10 md:left-1/2 top-4 bottom-4 w-[3px] bg-muted/40 md:-translate-x-1/2 rounded-full overflow-hidden">
+      <div className="absolute left-10 md:left-1/2 top-4 bottom-4 w-[3px] bg-muted md:-translate-x-1/2 rounded-full overflow-hidden">
         <motion.div
           style={{ scaleY, originY: 0 }}
           className="w-full h-full bg-primary rounded-full"
@@ -61,7 +61,7 @@ export function ProcessTimeline() {
       </div>
 
       {/* Timeline Steps */}
-      <div className="space-y-16 md:space-y-20 relative">
+      <div className="space-y-16 md:space-y-24 relative">
         {steps.map((item, idx) => {
           const Icon = item.icon;
           const isEven = idx % 2 === 0;
@@ -74,13 +74,13 @@ export function ProcessTimeline() {
               }`}
             >
               {/* Timeline Node Icon */}
-              <div className="absolute left-10 md:left-1/2 top-1.5 md:top-1/2 w-10 h-10 -translate-x-[18px] md:-translate-x-5 md:-translate-y-5 rounded-full flex items-center justify-center border-4 border-background bg-card shadow-sm z-10">
+              <div className="absolute left-10 md:left-1/2 top-2.5 md:top-1/2 w-10 h-10 -translate-x-[18px] md:-translate-x-5 md:-translate-y-5 rounded-full flex items-center justify-center border-4 border-background bg-card shadow-md z-10">
                 <motion.div
                   initial={{ scale: 0.5, opacity: 0 }}
                   whileInView={{ scale: 1, opacity: 1 }}
                   viewport={{ once: true, margin: "-100px" }}
                   transition={{ type: "spring", stiffness: 300, damping: 20, delay: idx * 0.1 }}
-                  className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold bg-primary text-white`}
+                  className="w-6 h-6 rounded-full flex items-center justify-center text-[10px] font-bold bg-primary text-white shadow-sm shadow-primary/25"
                 >
                   {idx + 1}
                 </motion.div>
@@ -89,31 +89,33 @@ export function ProcessTimeline() {
               {/* Space for the opposite column on desktop */}
               <div className="hidden md:block w-1/2" />
 
-              {/* Timeline Card */}
-              <motion.div
-                initial={{ opacity: 0, x: isEven ? -50 : 50, y: 10 }}
-                whileInView={{ opacity: 1, x: 0, y: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
-                transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.1 }}
-                className="w-full md:w-[45%] pl-16 md:pl-0 bg-card border border-border/40 hover:border-primary/20 rounded-2xl p-7 md:p-9 shadow-sm hover:shadow-md hover:shadow-primary/5 transition-all duration-300"
-              >
-                <div className="flex items-center gap-4 mb-5">
-                  <div className={`p-3 rounded-2xl ${item.color} flex-shrink-0`}>
-                    <Icon className="h-5 w-5" />
+              {/* Timeline Card Wrapper */}
+              <div className={`w-full md:w-[45%] pl-16 md:pl-0 ${isEven ? "md:pr-8" : "md:pl-8"}`}>
+                <motion.div
+                  initial={{ opacity: 0, x: isEven ? -40 : 40, y: 15 }}
+                  whileInView={{ opacity: 1, x: 0, y: 0 }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{ type: "spring", stiffness: 100, damping: 22, delay: 0.1 }}
+                  className="w-full bg-card border border-rose-100/50 hover:border-primary/20 rounded-2xl p-8 md:p-10 shadow-sm hover:shadow-md hover:shadow-primary/5 transition-all duration-300"
+                >
+                  <div className="flex items-center gap-4.5 mb-5">
+                    <div className={`p-3 rounded-xl ${item.color} flex-shrink-0 flex items-center justify-center`}>
+                      <Icon className="h-5.5 w-5.5 text-primary" />
+                    </div>
+                    <div>
+                      <span className="text-[10px] font-bold tracking-widest text-primary uppercase bg-secondary px-2.5 py-1 rounded-full">
+                        Step {item.step}
+                      </span>
+                      <h3 className="font-heading text-lg md:text-xl font-bold text-foreground mt-2">
+                        {item.title}
+                      </h3>
+                    </div>
                   </div>
-                  <div>
-                    <span className="text-xs font-bold tracking-widest text-primary uppercase">
-                      Step {item.step}
-                    </span>
-                    <h3 className="font-heading text-lg md:text-xl font-bold text-foreground">
-                      {item.title}
-                    </h3>
-                  </div>
-                </div>
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  {item.description}
-                </p>
-              </motion.div>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    {item.description}
+                  </p>
+                </motion.div>
+              </div>
             </div>
           );
         })}

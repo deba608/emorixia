@@ -70,7 +70,7 @@ Can we proceed to complete this design draft?`;
   const totalSteps = 4;
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start max-w-7xl mx-auto w-full px-2">
+    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start max-w-7xl mx-auto w-full px-6 md:px-12">
       {/* LEFT COLUMN: LIVE MOCKUP PREVIEW */}
       <div className="lg:col-span-6 flex flex-col items-center gap-6 sticky top-24">
         <div className="w-full flex items-center justify-between">
