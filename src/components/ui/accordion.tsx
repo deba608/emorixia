@@ -37,7 +37,7 @@ export function Accordion({ items, className }: AccordionProps) {
             {/* Header */}
             <button
               onClick={() => toggleIndex(idx)}
-              className="flex justify-between items-center w-full px-6 py-5 text-left font-semibold text-foreground hover:text-primary transition-colors focus:outline-none"
+              className="flex justify-between items-center w-full px-7 py-5 text-left font-semibold text-foreground hover:text-primary transition-colors focus:outline-none"
             >
               <span className="text-base sm:text-lg leading-relaxed">{item.question}</span>
               <motion.div
@@ -58,7 +58,7 @@ export function Accordion({ items, className }: AccordionProps) {
                   exit={{ height: 0, opacity: 0 }}
                   transition={{ duration: 0.3, ease: "easeInOut" }}
                 >
-                  <div className="px-6 pb-6 pt-1 text-sm sm:text-base leading-relaxed text-muted-foreground border-t border-border/10">
+                  <div className="px-7 pb-7 pt-2 text-sm sm:text-base leading-relaxed text-muted-foreground border-t border-border/10">
                     {item.answer}
                   </div>
                 </motion.div>

@@ -81,7 +81,7 @@ export default function TestimonialsPage() {
           {allReviews.map((rev, idx) => (
             <div
               key={idx}
-              className="bg-card border border-border/40 rounded-2xl p-8 flex flex-col justify-between gap-6 shadow-sm hover:shadow-md hover:border-primary/20 transition-all duration-300"
+              className="bg-card border border-border/40 rounded-2xl p-8 md:p-9 flex flex-col justify-between gap-6 shadow-sm hover:shadow-md hover:border-primary/20 transition-all duration-300"
             >
               {/* Stars */}
               <div className="flex items-center gap-1">

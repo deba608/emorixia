@@ -244,7 +244,7 @@ export default function HomePage() {
                     Starting at {prod.price}
                   </span>
                 </div>
-                <div className="p-6 flex flex-col items-start text-left flex-grow">
+                <div className="p-7 flex flex-col items-start text-left flex-grow">
                   <h3 className="font-heading text-xl font-bold text-foreground mb-2">{prod.title}</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-5 flex-grow">{prod.description}</p>
                   <a

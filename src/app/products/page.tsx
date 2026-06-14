@@ -164,7 +164,7 @@ export default function ProductsPage() {
               </div>
 
               {/* Card details */}
-              <div className="p-6 md:p-8 flex flex-col items-start text-left flex-grow">
+              <div className="p-7 md:p-9 flex flex-col items-start text-left flex-grow">
                 <span className="text-xs font-bold text-primary tracking-wider uppercase bg-secondary/80 px-2.5 py-1 rounded-lg mb-3">
                   {prod.category}
                 </span>

@@ -75,7 +75,7 @@ export function WhatsAppWidget() {
             className="w-[330px] sm:w-[360px] bg-card border border-border/40 rounded-[2rem] overflow-hidden shadow-2xl z-50"
           >
             {/* Chat Header */}
-            <div className="bg-primary text-white p-6 relative flex items-center gap-4">
+            <div className="bg-primary text-white px-6 py-5 relative flex items-center gap-4">
               <div className="relative">
                 <div className="w-12 h-12 rounded-full bg-white/20 border border-white/10 flex items-center justify-center font-heading text-lg font-bold text-white shadow-inner">
                   EM

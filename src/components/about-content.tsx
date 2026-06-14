@@ -126,13 +126,13 @@ export function AboutContent() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="relative bg-card border border-border/40 hover:border-primary/25 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all mb-8 md:mb-0"
+              className="relative bg-card border border-border/40 hover:border-primary/25 rounded-2xl p-7 md:p-8 shadow-sm hover:shadow-md transition-all mb-8 md:mb-0"
             >
               {/* Timeline dot */}
               <div className="absolute -left-[41px] top-6 md:relative md:left-0 md:top-0 md:mb-4 w-6 h-6 rounded-full bg-primary border-4 border-background flex items-center justify-center" />
               <div className="font-heading text-xl font-bold text-primary mb-1">{item.year}</div>
               <h3 className="font-heading text-base font-semibold text-foreground mb-2">{item.title}</h3>
-              <p className="text-xs text-muted-foreground leading-relaxed">{item.desc}</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
             </motion.div>
           ))}
         </div>
@@ -151,7 +151,7 @@ export function AboutContent() {
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <motion.div variants={cardVariants} className="flex flex-col items-start gap-4 text-left bg-card p-6 rounded-2xl border border-border/20 hover:border-primary/20 transition-all duration-300">
+          <motion.div variants={cardVariants} className="flex flex-col items-start gap-4 text-left bg-card p-7 md:p-8 rounded-2xl border border-border/20 hover:border-primary/20 transition-all duration-300">
             <div className="p-3 bg-secondary text-primary rounded-xl">
               <Award className="h-6 w-6" />
             </div>
@@ -161,7 +161,7 @@ export function AboutContent() {
             </p>
           </motion.div>
 
-          <motion.div variants={cardVariants} className="flex flex-col items-start gap-4 text-left bg-card p-6 rounded-2xl border border-border/20 hover:border-primary/20 transition-all duration-300">
+          <motion.div variants={cardVariants} className="flex flex-col items-start gap-4 text-left bg-card p-7 md:p-8 rounded-2xl border border-border/20 hover:border-primary/20 transition-all duration-300">
             <div className="p-3 bg-secondary text-primary rounded-xl">
               <Heart className="h-6 w-6" />
             </div>
@@ -171,7 +171,7 @@ export function AboutContent() {
             </p>
           </motion.div>
 
-          <motion.div variants={cardVariants} className="flex flex-col items-start gap-4 text-left bg-card p-6 rounded-2xl border border-border/20 hover:border-primary/20 transition-all duration-300">
+          <motion.div variants={cardVariants} className="flex flex-col items-start gap-4 text-left bg-card p-7 md:p-8 rounded-2xl border border-border/20 hover:border-primary/20 transition-all duration-300">
             <div className="p-3 bg-secondary text-primary rounded-xl">
               <ShieldCheck className="h-6 w-6" />
             </div>
