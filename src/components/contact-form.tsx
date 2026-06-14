@@ -48,7 +48,7 @@ export function ContactForm() {
       } else {
         setStatus({ type: "error", message: response.message });
       }
-    } catch (error) {
+    } catch {
       setStatus({
         type: "error",
         message: "An unexpected error occurred. Please try sending via WhatsApp.",

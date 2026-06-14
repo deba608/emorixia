@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Sparkles, ArrowLeft, ArrowRight, MessageSquare, Check, HelpCircle } from "lucide-react";
+import { Sparkles, ArrowLeft, ArrowRight, MessageSquare, Check } from "lucide-react";
 
 // Config options
 const SHAPES = [

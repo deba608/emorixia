@@ -79,7 +79,7 @@ export function TestimonialSlider({ testimonials }: TestimonialSliderProps) {
             initial="enter"
             animate="center"
             exit="exit"
-            className="w-full flex flex-col items-center text-center bg-card border border-border/40 rounded-3xl p-8 md:p-12 shadow-md shadow-primary/5"
+            className="w-full flex flex-col items-center text-center bg-card border border-border/40 rounded-2xl p-8 md:p-12 shadow-md shadow-primary/5"
           >
             {/* Stars */}
             <div className="flex items-center gap-1 mb-6">
@@ -128,14 +128,14 @@ export function TestimonialSlider({ testimonials }: TestimonialSliderProps) {
       <div className="absolute top-1/2 -translate-y-1/2 left-0 right-0 flex justify-between pointer-events-none px-2">
         <button
           onClick={() => paginate(-1)}
-          className="w-11 h-11 rounded-full border border-border/40 bg-card/80 hover:bg-card hover:border-primary/45 text-foreground/80 hover:text-primary flex items-center justify-center pointer-events-auto backdrop-blur-sm transition-all shadow-sm focus:outline-none"
+          className="w-11 h-11 rounded-xl border border-border/40 bg-card/80 hover:bg-card hover:border-primary/45 text-foreground/80 hover:text-primary flex items-center justify-center pointer-events-auto backdrop-blur-sm transition-all shadow-sm focus:outline-none"
           aria-label="Previous Review"
         >
           <ChevronLeft className="h-5 w-5" />
         </button>
         <button
           onClick={() => paginate(1)}
-          className="w-11 h-11 rounded-full border border-border/40 bg-card/80 hover:bg-card hover:border-primary/45 text-foreground/80 hover:text-primary flex items-center justify-center pointer-events-auto backdrop-blur-sm transition-all shadow-sm focus:outline-none"
+          className="w-11 h-11 rounded-xl border border-border/40 bg-card/80 hover:bg-card hover:border-primary/45 text-foreground/80 hover:text-primary flex items-center justify-center pointer-events-auto backdrop-blur-sm transition-all shadow-sm focus:outline-none"
           aria-label="Next Review"
         >
           <ChevronRight className="h-5 w-5" />

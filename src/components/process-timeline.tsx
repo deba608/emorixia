@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef } from "react";
-import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import { motion, useScroll, useSpring } from "framer-motion";
 import { Image as ImageIcon, Paintbrush, CheckCircle, Truck } from "lucide-react";
 
 const steps = [
@@ -95,7 +95,7 @@ export function ProcessTimeline() {
                 whileInView={{ opacity: 1, x: 0, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.1 }}
-                className="w-full md:w-[45%] pl-16 md:pl-0 bg-card border border-border/40 hover:border-primary/20 rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-md hover:shadow-primary/5 transition-all duration-300"
+                className="w-full md:w-[45%] pl-16 md:pl-0 bg-card border border-border/40 hover:border-primary/20 rounded-2xl p-6 md:p-8 shadow-sm hover:shadow-md hover:shadow-primary/5 transition-all duration-300"
               >
                 <div className="flex items-center gap-4 mb-4">
                   <div className={`p-3 rounded-2xl ${item.color} flex-shrink-0`}>

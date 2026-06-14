@@ -37,7 +37,7 @@ export function NewsletterForm() {
       } else {
         setStatus({ type: "error", message: response.message });
       }
-    } catch (error) {
+    } catch {
       setStatus({
         type: "error",
         message: "An unexpected error occurred. Please try again.",

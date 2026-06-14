@@ -60,7 +60,7 @@ export function AboutContent() {
         transition={{ duration: 0.6 }}
         className="text-center flex flex-col items-center gap-4 max-w-3xl mx-auto"
       >
-        <span className="text-xs font-bold tracking-widest text-primary uppercase bg-secondary px-3.5 py-1.5 rounded-full">
+        <span className="text-xs font-bold tracking-widest text-primary uppercase bg-secondary px-3.5 py-1.5 rounded-lg">
           Our Story
         </span>
         <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-foreground leading-tight">
@@ -101,7 +101,7 @@ export function AboutContent() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className="lg:col-span-5 relative aspect-square rounded-3xl overflow-hidden border border-border/20 bg-card shadow-md"
+          className="lg:col-span-5 relative aspect-square rounded-2xl overflow-hidden border border-border/20 bg-card shadow-md"
         >
           <img
             src="https://images.unsplash.com/photo-1512909006721-3d6018887383?q=80&w=800&auto=format&fit=crop"
@@ -144,7 +144,7 @@ export function AboutContent() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
-        className="flex flex-col gap-12 bg-muted/20 border border-border/10 rounded-[2.5rem] p-8 md:p-14"
+        className="flex flex-col gap-12 bg-muted/20 border border-border/10 rounded-2xl p-8 md:p-14"
       >
         <h2 className="font-heading text-2xl md:text-4xl font-bold text-foreground text-center">
           Our Pillars of Craftsmanship

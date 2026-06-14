@@ -104,7 +104,7 @@ export function GalleryMasonry() {
           <button
             key={cat}
             onClick={() => setFilter(cat)}
-            className={`px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 ${
+            className={`px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-300 ${
               filter === cat
                 ? "bg-primary text-white shadow-md shadow-primary/15"
                 : "border border-border/40 bg-card hover:border-primary/30 text-foreground/80 hover:text-primary"
@@ -126,7 +126,7 @@ export function GalleryMasonry() {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.9 }}
               transition={{ duration: 0.3 }}
-              className={`break-inside-avoid relative group overflow-hidden rounded-3xl border border-border/20 bg-card cursor-pointer shadow-sm hover:shadow-lg hover:shadow-primary/5 hover:border-primary/25 transition-all duration-500 ${item.ratio}`}
+              className={`break-inside-avoid relative group overflow-hidden rounded-2xl border border-border/20 bg-card cursor-pointer shadow-sm hover:shadow-lg hover:shadow-primary/5 hover:border-primary/25 transition-all duration-500 ${item.ratio}`}
               onClick={() => setActiveLightbox({ src: item.src, alt: item.alt })}
             >
               {/* Image */}
@@ -141,14 +141,14 @@ export function GalleryMasonry() {
               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
                 <div className="translate-y-4 group-hover:translate-y-0 transition-transform duration-300 flex justify-between items-center w-full">
                   <div>
-                    <span className="text-xs font-bold text-primary tracking-wider uppercase bg-secondary/95 px-2.5 py-1 rounded-full">
+                    <span className="text-xs font-bold text-primary tracking-wider uppercase bg-secondary/95 px-2.5 py-1 rounded-lg">
                       {item.category}
                     </span>
                     <h3 className="text-white font-heading text-lg font-semibold mt-2">
                       {item.alt}
                     </h3>
                   </div>
-                  <div className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center flex-shrink-0 ml-3">
+                  <div className="w-10 h-10 rounded-xl bg-primary text-white flex items-center justify-center flex-shrink-0 ml-3">
                     <ZoomIn className="h-5 w-5" />
                   </div>
                 </div>

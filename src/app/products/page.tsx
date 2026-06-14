@@ -98,7 +98,7 @@ export default function ProductsPage() {
         transition={{ duration: 0.5 }}
         className="text-center flex flex-col items-center gap-4 max-w-2xl mx-auto"
       >
-        <span className="text-xs font-bold tracking-widest text-primary uppercase bg-secondary px-3.5 py-1.5 rounded-full">
+        <span className="text-xs font-bold tracking-widest text-primary uppercase bg-secondary px-3.5 py-1.5 rounded-lg">
           Keepsakes Catalogue
         </span>
         <h1 className="font-heading text-4xl sm:text-5xl font-bold text-foreground">
@@ -120,7 +120,7 @@ export default function ProductsPage() {
           <button
             key={cat}
             onClick={() => setFilter(cat)}
-            className={`px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 cursor-pointer ${
+            className={`px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-300 cursor-pointer ${
               filter === cat
                 ? "bg-primary text-white shadow-md shadow-primary/15"
                 : "border border-border/40 bg-card hover:border-primary/30 text-foreground/80 hover:text-primary"
@@ -145,7 +145,7 @@ export default function ProductsPage() {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
               transition={{ duration: 0.3 }}
-              className="flex flex-col bg-card border border-border/40 rounded-3xl overflow-hidden group shadow-sm hover:shadow-lg hover:shadow-primary/5 hover:border-primary/20 transition-all duration-300"
+              className="flex flex-col bg-card border border-border/40 rounded-2xl overflow-hidden group shadow-sm hover:shadow-lg hover:shadow-primary/5 hover:border-primary/20 transition-all duration-300"
             >
               {/* Product Image */}
               <div className="relative aspect-[4/3] w-full overflow-hidden border-b border-border/10">
@@ -155,17 +155,17 @@ export default function ProductsPage() {
                   loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                <span className="absolute bottom-4 left-4 bg-background/95 dark:bg-card/95 backdrop-blur-sm px-4 py-1.5 rounded-full text-sm font-bold text-primary border border-border/20">
+                <span className="absolute bottom-4 left-4 bg-background/95 dark:bg-card/95 backdrop-blur-sm px-4 py-1.5 rounded-lg text-sm font-bold text-primary border border-border/20">
                   Starting at {prod.price}
                 </span>
-                <div className="absolute top-4 right-4 w-8 h-8 rounded-full bg-card border border-border/30 text-muted-foreground group-hover:text-primary flex items-center justify-center transition-colors shadow-sm">
+                <div className="absolute top-4 right-4 w-8 h-8 rounded-lg bg-card border border-border/30 text-muted-foreground group-hover:text-primary flex items-center justify-center transition-colors shadow-sm">
                   <Heart className="h-4 w-4" />
                 </div>
               </div>
 
               {/* Card details */}
               <div className="p-6 md:p-8 flex flex-col items-start text-left flex-grow">
-                <span className="text-xs font-bold text-primary tracking-wider uppercase bg-secondary/80 px-2.5 py-1 rounded-full mb-3">
+                <span className="text-xs font-bold text-primary tracking-wider uppercase bg-secondary/80 px-2.5 py-1 rounded-lg mb-3">
                   {prod.category}
                 </span>
                 <h3 className="font-heading text-2xl font-bold text-foreground mb-3">
@@ -180,7 +180,7 @@ export default function ProductsPage() {
                   href={`https://wa.me/917848807515?text=${encodeURIComponent(prod.whatsappText)}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full border border-primary/20 hover:border-primary bg-secondary/30 hover:bg-primary text-primary hover:text-white py-3.5 rounded-full font-bold text-sm transition-all duration-300 flex items-center justify-center gap-2"
+                  className="w-full border border-primary/20 hover:border-primary bg-secondary/30 hover:bg-primary text-primary hover:text-white py-3.5 rounded-xl font-bold text-sm transition-all duration-300 flex items-center justify-center gap-2"
                 >
                   <MessageSquare className="h-4 w-4" />
                   <span>Customize on WhatsApp</span>
@@ -197,7 +197,7 @@ export default function ProductsPage() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
-        className="bg-secondary/40 border border-primary/10 rounded-[2rem] p-6 md:p-10 text-center max-w-4xl mx-auto mt-8 flex flex-col items-center gap-4"
+        className="bg-secondary/40 border border-primary/10 rounded-2xl p-6 md:p-10 text-center max-w-4xl mx-auto mt-8 flex flex-col items-center gap-4"
       >
         <Sparkles className="h-8 w-8 text-primary fill-primary/10" />
         <h3 className="font-heading text-xl md:text-2xl font-bold text-primary">
