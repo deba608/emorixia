@@ -1,0 +1,1955 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>💖 Emorixia - Handmade Memory Gifts & Personalized Keepsakes</title>
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="Emorixia transforms memories into premium handcrafted gifts. Custom memory magazines, photo frames, Lippan art, resin art, and emotional keepsakes. 100+ orders delivered with love.">
+<meta name="keywords" content="memory gifts, handmade keepsakes, personalized magazines, photo frames, memory art, Lippan art, resin art, emotional gifts, Odisha">
+<meta name="author" content="Emorixia">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph / Social Media -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="💖 Emorixia - Memories Forever">
+<meta property="og:description" content="Transform your emotions into premium handcrafted memory gifts. Custom magazines, frames, and keepsakes made with love.">
+<meta property="og:url" content="https://emorixia.in">
+<meta property="og:image" content="https://emorixia.in/og-image.jpg">
+<meta property="og:site_name" content="Emorixia">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="💖 Emorixia - Memories Forever">
+<meta name="twitter:description" content="Premium handmade memory gifts and personalized keepsakes crafted with emotion.">
+<meta name="twitter:image" content="https://emorixia.in/og-image.jpg">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YOUR_TRACKING_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  // Replace 'G-YOUR_TRACKING_ID' with your actual Google Analytics ID
+  gtag('config', 'G-YOUR_TRACKING_ID');
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#796a70;
+    color:#11202b;
+    overflow-x:hidden;
+    padding-top:76px;
+}
+
+.site-header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:20;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:16px;
+    padding:18px 6%;
+    backdrop-filter:blur(16px);
+    background:rgba(12,12,12,0.28);
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.site-logo{
+    font-family:'Amatic SC', cursive;
+    font-size:32px;
+    color:#fff;
+    letter-spacing:1px;
+}
+
+.site-nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:flex-end;
+    gap:22px;
+}
+
+.site-nav a{
+    color:rgba(255,255,255,0.85);
+    text-decoration:none;
+    font-weight:600;
+    transition:color 0.3s ease;
+}
+
+.site-nav a:hover{
+    color:#ff8ba7;
+}
+
+/* HAMBURGER MENU */
+
+.hamburger{
+    display:none;
+    flex-direction:column;
+    cursor:pointer;
+    gap:6px;
+}
+
+.hamburger span{
+    width:28px;
+    height:3px;
+    background:#fff;
+    border-radius:2px;
+    transition:0.3s ease;
+}
+
+.hamburger.active span:nth-child(1){
+    transform:rotate(45deg) translate(10px, 10px);
+}
+
+.hamburger.active span:nth-child(2){
+    opacity:0;
+}
+
+.hamburger.active span:nth-child(3){
+    transform:rotate(-45deg) translate(7px, -7px);
+}
+
+/* MOBILE NAV */
+
+.site-nav.mobile-active{
+    display:flex !important;
+}
+
+/* HERO */
+
+.hero{
+    position:relative;
+    min-height:calc(100vh - 76px);
+    overflow:hidden;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    color:rgb(237, 240, 242);
+    padding:20px;
+}
+
+/* ABOUT SECTION */
+
+.about-section{
+    background:linear-gradient(180deg, #fff6fb 0%, #ffeaf2 100%);
+    border:1px solid rgba(255,120,155,0.18);
+    border-radius:30px;
+    padding:70px 40px;
+    box-shadow:0 18px 50px rgba(255,75,125,0.1);
+}
+
+.about-content{
+    max-width:900px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.about-text h3{
+    color:#ff4b7d;
+    font-size:28px;
+    margin-bottom:16px;
+}
+
+.about-text p{
+    color:#333;
+    line-height:2;
+    font-size:16px;
+    margin-bottom:16px;
+}
+
+.about-stats{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    margin-top:30px;
+}
+
+.stat-box{
+    background:white;
+    padding:24px;
+    border-radius:16px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(255,75,125,0.08);
+}
+
+.stat-box .number{
+    font-size:32px;
+    font-weight:700;
+    color:#ff4b7d;
+}
+
+.stat-box .label{
+    font-size:14px;
+    color:#666;
+    margin-top:8px;
+}
+
+.about-features{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+
+.feature-item{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:12px;
+    background:white;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(255,75,125,0.06);
+}
+
+.feature-icon{
+    font-size:24px;
+}
+
+.feature-text{
+    color:#333;
+    font-weight:500;
+}
+
+@media(max-width:768px){
+    .about-content{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+    
+    .about-section{
+        padding:40px 24px;
+    }
+    
+    .about-text h3{
+        font-size:24px;
+    }
+}
+
+/* HERO */
+
+.hero video{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display:block;
+    object-fit:cover;
+    object-position:center center;
+    z-index:-3;
+}
+
+.hero::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:linear-gradient(rgba(0,0,0,0.62),rgba(0,0,0,0.62));
+    z-index:-2;
+}
+
+.hero::after{
+    content:'';
+    position:absolute;
+    inset:0;
+    background-image:
+        radial-gradient(circle, rgba(255,255,255,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+    background-size: 100px 100px, 140px 140px;
+    opacity:0.35;
+    z-index:-1;
+    pointer-events:none;
+}
+
+.hero-content{
+    animation:fadeUp 1.2s ease both;
+    position:relative;
+    z-index:1;
+    width:min(100%,980px);
+    background:rgba(255,255,255,0.16);
+    backdrop-filter:blur(14px);
+    border:1px dashed rgba(255,255,255,0.55);
+    box-shadow:0 30px 80px rgba(0,0,0,0.28);
+    padding:50px 45px;
+    border-radius:38px;
+}
+
+.hero h1{
+    font-family:'Amatic SC', cursive;
+    font-size:78px;
+    margin-bottom:18px;
+    letter-spacing:1px;
+}
+
+.hero p{
+    font-size:24px;
+    max-width:750px;
+    margin:auto;
+    line-height:1.8;
+}
+
+.hero-buttons{
+    margin-top:35px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:14px;
+}
+
+.hero-badge{
+    margin-top:18px;
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:10px 18px;
+    border-radius:999px;
+    background:rgba(255,255,255,0.12);
+    border:1px solid rgba(255,255,255,0.2);
+    color:#fff;
+    font-size:15px;
+    letter-spacing:0.01em;
+}
+
+.hero-badge span{
+    font-weight:700;
+    color:#ffd4e5;
+}
+
+.paper-feature{
+    margin-top:12px;
+    display:inline-block;
+    padding:8px 14px;
+    background:rgba(255,255,255,0.06);
+    color:#ffeef6;
+    border-radius:12px;
+    font-size:14px;
+    border:1px solid rgba(255,255,255,0.06);
+}
+
+.paper-feature .odisha{
+    color:#ff9933;
+    font-weight:800;
+    margin-right:8px;
+    text-transform:capitalize;
+}
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-width:180px;
+    padding:14px 34px;
+    margin:0;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:600;
+    letter-spacing:0.02em;
+    transition:transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+    box-shadow:0 18px 40px rgba(0,0,0,0.12);
+}
+
+.btn-main{
+    background:#ff4b7d;
+    color:white;
+}
+
+.btn-main:hover{
+    background:#ffffff;
+    color:#111;
+    transform:translateY(-4px);
+}
+
+.btn-outline{
+    border:2px solid rgba(255,255,255,0.9);
+    color:white;
+    background:rgba(255,255,255,0.08);
+}
+
+.btn-outline:hover{
+    background:white;
+    color:#111;
+    transform:translateY(-4px);
+}
+
+/* SECTION */
+
+section{
+    padding:90px 8%;
+    position:relative;
+}
+
+.section-title{
+    position:relative;
+}
+
+.section-title::after{
+    content:'';
+    display:block;
+    width:72px;
+    height:4px;
+    margin:18px auto 0;
+    background:#ff4b7d;
+    border-radius:999px;
+}
+
+.section-title{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:55px;
+    color:#ff4b7d;
+}
+
+/* CARDS */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:linear-gradient(180deg, rgba(255,255,255,0.96) 0%, rgba(255,244,250,0.98) 100%);
+    border:1px solid rgba(255,255,255,0.8);
+    border-radius:28px;
+    overflow:hidden;
+    box-shadow:0 22px 55px rgba(0,0,0,0.12);
+    transition:transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+    animation:floatCard 5s ease-in-out infinite;
+}
+
+.card:hover{
+    transform:translateY(-14px) scale(1.02);
+    box-shadow:0 25px 65px rgba(255,75,125,0.22);
+    border-color:rgba(255,75,125,0.3);
+}
+
+.card img{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+    cursor:pointer;
+    border-bottom:1px solid rgba(255,255,255,0.7);
+}
+
+.card-content{
+    padding:26px 24px 30px;
+}
+
+.card-content h3{
+    color:#ff4b7d;
+    margin-bottom:10px;
+    font-size:24px;
+}
+
+.card-content p{
+    line-height:1.8;
+}
+
+/* GALLERY */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+    border-radius:20px;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.06);
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+.feedback-section{
+    background:linear-gradient(180deg, #fff8fb 0%, #fff1f7 100%);
+    border:1px solid rgba(255,75,125,0.16);
+    border-radius:30px;
+    padding:60px 40px;
+    box-shadow:0 20px 50px rgba(255,75,125,0.1);
+    margin:60px 0;
+}
+
+.feedback-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:24px;
+}
+
+.feedback-card{
+    background:rgba(255,255,255,0.95);
+    border:1px solid rgba(255,75,125,0.12);
+    border-radius:24px;
+    padding:28px;
+    min-height:220px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    box-shadow:0 12px 30px rgba(0,0,0,0.08);
+}
+
+.feedback-card p{
+    line-height:1.75;
+    color:#4a4a4f;
+    margin-bottom:18px;
+}
+
+.feedback-rating{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    margin-bottom:16px;
+}
+
+.feedback-rating span{
+    font-size:18px;
+    color:#ff5a8f;
+    letter-spacing:1px;
+}
+
+.feedback-rating small{
+    color:#7a7a84;
+    font-size:14px;
+}
+
+.feedback-author{
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+    font-weight:700;
+    color:#111;
+}
+
+.feedback-author span{
+    font-size:14px;
+    color:#7a7a84;
+}
+
+/* WHY */
+
+.texture-info{
+    margin-top:22px;
+    background:rgba(255,255,255,0.02);
+    padding:18px 20px;
+    border-radius:12px;
+    border:1px dashed rgba(255,75,125,0.06);
+    color:#fffafa;
+    max-width:900px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.why{
+    background:linear-gradient(180deg, #fff6fb 0%, #ffeaf2 100%);
+    border:1px solid rgba(255,120,155,0.18);
+    border-radius:30px;
+    padding:70px 40px;
+    text-align:center;
+    box-shadow:0 18px 50px rgba(255,75,125,0.1);
+}
+
+.why p{
+    max-width:850px;
+    margin:auto;
+    line-height:2;
+    font-size:20px;
+}
+
+/* CONTACT */
+
+.contact-box{
+    background:linear-gradient(180deg, rgba(255,255,255,0.98) 0%, rgba(255,239,247,0.96) 100%);
+    border:1px solid rgba(255,75,125,0.16);
+    border-radius:30px;
+    padding:52px 42px;
+    box-shadow:0 22px 60px rgba(255,75,125,0.12);
+    text-align:center;
+}
+
+.contact-buttons{
+    margin-top:30px;
+}
+
+/* CONTACT FORM */
+
+.contact-form{
+    max-width:600px;
+    margin:30px auto 0;
+}
+
+.form-group{
+    margin-bottom:20px;
+    display:flex;
+    flex-direction:column;
+}
+
+.form-group label{
+    font-weight:600;
+    margin-bottom:8px;
+    color:#ff4b7d;
+    font-size:15px;
+}
+
+.form-group input,
+.form-group textarea{
+    padding:14px 16px;
+    border:1px solid rgba(255,75,125,0.2);
+    border-radius:12px;
+    font-family:'Poppins', sans-serif;
+    font-size:15px;
+    resize:none;
+    transition:0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+    outline:none;
+    border-color:#ff4b7d;
+    box-shadow:0 0 0 3px rgba(255,75,125,0.1);
+}
+
+.form-group textarea{
+    min-height:120px;
+}
+
+.submit-btn{
+    width:100%;
+    padding:16px;
+    background:#ff4b7d;
+    color:white;
+    border:none;
+    border-radius:12px;
+    font-weight:600;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s ease;
+}
+
+.submit-btn:hover{
+    background:#ff2d63;
+    transform:translateY(-2px);
+}
+
+.form-message{
+    text-align:center;
+    margin-top:16px;
+    padding:12px;
+    border-radius:8px;
+    font-size:14px;
+    display:none;
+}
+
+.form-message.success{
+    background:rgba(76,175,80,0.1);
+    color:#4caf50;
+    border:1px solid rgba(76,175,80,0.3);
+    display:block;
+}
+
+.form-message.error{
+    background:rgba(244,67,54,0.1);
+    color:#f44336;
+    border:1px solid rgba(244,67,54,0.3);
+    display:block;
+}
+
+/* FOOTER */
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:35px 20px;
+}
+
+footer a{
+    color:#ff4b7d;
+    text-decoration:none;
+}
+
+/* FAQ SECTION */
+
+.faq-container{
+    max-width:800px;
+    margin:0 auto;
+    background:linear-gradient(180deg, #fff8fb 0%, #fff1f7 100%);
+    border:1px solid rgba(255,75,125,0.16);
+    border-radius:30px;
+    padding:60px 40px;
+    box-shadow:0 20px 50px rgba(255,75,125,0.1);
+}
+
+.faq-item{
+    margin-bottom:20px;
+    border:1px solid rgba(255,75,125,0.1);
+    border-radius:16px;
+    overflow:hidden;
+    background:white;
+    transition:0.3s ease;
+}
+
+.faq-item:hover{
+    box-shadow:0 8px 20px rgba(255,75,125,0.12);
+    border-color:rgba(255,75,125,0.2);
+}
+
+.faq-question{
+    padding:20px;
+    background:rgba(255,75,125,0.04);
+    cursor:pointer;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-weight:600;
+    color:#ff4b7d;
+    user-select:none;
+    transition:0.3s ease;
+}
+
+.faq-question:hover{
+    background:rgba(255,75,125,0.08);
+}
+
+.faq-icon{
+    font-size:24px;
+    transition:transform 0.3s ease;
+}
+
+.faq-item.active .faq-icon{
+    transform:rotate(180deg);
+}
+
+.faq-answer{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height 0.3s ease;
+    padding:0 20px;
+    color:#666;
+    line-height:1.8;
+}
+
+.faq-item.active .faq-answer{
+    max-height:300px;
+    padding:20px;
+}
+
+/* NEWSLETTER */
+
+.newsletter-section{
+    background:linear-gradient(135deg, #ff4b7d 0%, #ff8ba7 100%);
+    color:white;
+    text-align:center;
+    padding:60px 40px;
+    border-radius:30px;
+    margin:60px 0;
+}
+
+.newsletter-section h2{
+    font-size:32px;
+    margin-bottom:16px;
+    color:white;
+}
+
+.newsletter-section p{
+    font-size:18px;
+    margin-bottom:30px;
+    opacity:0.95;
+}
+
+.newsletter-form{
+    display:flex;
+    max-width:500px;
+    margin:0 auto;
+    gap:12px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.newsletter-form input{
+    flex:1;
+    min-width:250px;
+    padding:14px 16px;
+    border:none;
+    border-radius:25px;
+    font-size:15px;
+    font-family:'Poppins', sans-serif;
+    transition:0.3s ease;
+}
+
+.newsletter-form input:focus{
+    outline:none;
+    box-shadow:0 0 0 3px rgba(255,255,255,0.3);
+}
+
+.newsletter-form button{
+    padding:14px 28px;
+    background:white;
+    color:#ff4b7d;
+    border:none;
+    border-radius:25px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s ease;
+}
+
+.newsletter-form button:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+.newsletter-message{
+    text-align:center;
+    margin-top:16px;
+    font-size:14px;
+    display:none;
+}
+
+.newsletter-message.show{
+    display:block;
+}
+
+/* IMAGE POPUP */
+
+.image-popup{
+    display:none;
+    position:fixed;
+    z-index:9999;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.9);
+
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+
+    padding:20px;
+}
+
+.image-popup img{
+    max-width:90%;
+    max-height:80%;
+    border-radius:20px;
+    transition:transform 0.2s ease;
+    cursor:grab;
+}
+
+/* CLOSE BUTTON */
+
+.image-popup span{
+    position:absolute;
+    top:20px;
+    right:35px;
+    color:white;
+    font-size:45px;
+    cursor:pointer;
+}
+
+/* ZOOM BUTTONS */
+
+.zoom-controls{
+    position:absolute;
+    bottom:40px;
+    display:flex;
+    gap:15px;
+}
+
+.zoom-controls button{
+    padding:12px 20px;
+    border:none;
+    border-radius:12px;
+    background:#ff4b7d;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.zoom-controls button:hover{
+    background:white;
+    color:#111;
+}
+
+/* ANIMATION */
+
+@keyframes fadeUp{
+    from{
+        transform:translateY(40px);
+        opacity:0;
+    }
+
+    to{
+        transform:translateY(0);
+        opacity:1;
+    }
+}
+
+@keyframes floatCard{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-8px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+    .site-header{
+        padding:16px 4%;
+    }
+
+    .site-nav{
+        gap:16px;
+    }
+
+    section{
+        padding:70px 6%;
+    }
+
+    .hero-content{
+        padding:40px 30px;
+    }
+
+    .hero h1{
+        font-size:62px;
+    }
+}
+
+@media(max-width:768px){
+    body{
+        padding-top:72px;
+    }
+
+    .site-header{
+        flex-direction:row;
+        align-items:center;
+        gap:10px;
+    }
+
+    .hamburger{
+        display:flex;
+    }
+
+    .site-nav{
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        flex-direction:column;
+        background:rgba(12,12,12,0.98);
+        backdrop-filter:blur(16px);
+        padding:20px;
+        border-top:1px solid rgba(255,255,255,0.1);
+        display:none;
+        gap:0;
+    }
+
+    .site-nav a{
+        padding:12px 0;
+        border-bottom:1px solid rgba(255,255,255,0.05);
+    }
+
+    .site-nav a:last-child{
+        border-bottom:none;
+    }
+
+    .hero{
+        min-height:calc(100vh - 72px);
+        padding:16px;
+    }
+
+    .hero-content{
+        width:100%;
+        padding:30px 24px;
+        border-radius:28px;
+    }
+
+    .hero h1{
+        font-size:48px;
+    }
+
+    .hero p{
+        font-size:17px;
+        max-width:100%;
+    }
+
+    .hero-buttons{
+        gap:12px;
+    }
+
+    .btn{
+        width:100%;
+        min-width:0;
+        padding:16px 18px;
+    }
+
+    .section-title{
+        font-size:30px;
+    }
+
+    .cards{
+        gap:20px;
+    }
+
+    .card img{
+        height:280px;
+    }
+
+    .gallery{
+        gap:16px;
+    }
+
+    .gallery img{
+        height:280px;
+    }
+
+    .why,
+    .contact-box{
+        padding:40px 24px;
+    }
+
+    footer{
+        padding:30px 20px;
+    }
+}
+
+@media(max-width:480px){
+    .site-header{
+        padding:14px 4%;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .section-title{
+        font-size:26px;
+    }
+
+    .card img,
+    .gallery img{
+        height:200px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="site-logo">Emorixia</div>
+    <nav class="site-nav">
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<video autoplay muted loop playsinline poster="poster.jpg">
+    <source src="emotion.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<div class="hero-content">
+
+<h1>💖 Emorixia</h1>
+
+<p>
+Handmade memory gifts and emotion-filled keepsakes,<br>
+crafted to feel like they were made just for you. ✨
+</p>
+
+<div class="hero-buttons">
+
+<a href="https://wa.me/917848807515" target="_blank" class="btn btn-main">
+💬 Order on WhatsApp
+</a>
+
+<a href="https://instagram.com/thesairajj" target="_blank" class="btn btn-outline">
+📸 Instagram
+</a>
+
+</div>
+
+<div class="hero-badge">
+    <span>100+ orders delivered</span> — handcrafted memories delivered with love.
+</div>
+
+<div class="paper-feature">
+    <span class="odisha"> Odisha's best prinnted store , </span> Printed on premium textured papers — Cotton, Linen and Natural finishes for a tactile, What remains after the years pass.
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section>
+
+<h2 class="section-title">
+💖 About Emorixia
+</h2>
+
+<div class="about-section">
+
+<div class="about-content">
+
+<div class="about-text">
+<h3>Every Memory Deserves Forever</h3>
+<p>
+Emorixia was born from a simple idea: memories shouldn't fade. We create premium handcrafted gifts that transform your emotions into timeless keepsakes.
+</p>
+<p>
+Every product is designed with love, printed on the finest textured papers (cotton, linen, natural), and customized to tell YOUR unique story. We believe that the most precious gifts are those that carry emotions.
+</p>
+</div>
+
+<div class="about-features">
+<div class="feature-item">
+<span class="feature-icon">✨</span>
+<span class="feature-text">100% Customizable Designs</span>
+</div>
+<div class="feature-item">
+<span class="feature-icon">📝</span>
+<span class="feature-text">Premium Textured Papers</span>
+</div>
+<div class="feature-item">
+<span class="feature-icon">💝</span>
+<span class="feature-text">Handcrafted with Care</span>
+</div>
+<div class="feature-item">
+<span class="feature-icon">🚚</span>
+<span class="feature-text">Fast Pan-India Delivery</span>
+</div>
+<div class="feature-item">
+<span class="feature-icon">⭐</span>
+<span class="feature-text">100+ Happy Customers</span>
+</div>
+<div class="feature-item">
+<span class="feature-icon">💯</span>
+<span class="feature-text">Lifetime Memories Guaranteed</span>
+</div>
+</div>
+
+</div>
+
+<div class="about-stats">
+<div class="stat-box">
+<div class="number">100+</div>
+<div class="label">Orders Delivered</div>
+</div>
+<div class="stat-box">
+<div class="number">12+</div>
+<div class="label">Service Types</div>
+</div>
+<div class="stat-box">
+<div class="number">5⭐</div>
+<div class="label">Average Rating</div>
+</div>
+<div class="stat-box">
+<div class="number">24/7</div>
+<div class="label">Customer Support</div>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section id="services">
+
+<h2 class="section-title">
+❤️ Stories We Turn Into Forever
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="Happy Birthday Rupali.png" alt="Romantic love story memory magazine with couple photos" loading="lazy">
+<div class="card-content">
+<h3>💕 Love Stories</h3>
+<p>
+Premium couple memory magazines and romantic surprise creations designed emotionally.
+</p>
+</div>
+</div>
+
+<div class="card">
+<img src="28.04.2004/17.png" alt="Creative birthday magazine with aesthetic edits and photos" loading="lazy">
+<div class="card-content">
+<h3>🎂 Birthday Memories</h3>
+<p>
+Creative birthday magazines, aesthetic edits and unforgettable emotional gifts.
+</p>
+</div>
+</div>
+
+<div class="card">
+<img src="IMG-20250214-WA0160.jpg" alt="Family moments memory magazine with multiple family members" loading="lazy">
+<div class="card-content">
+<h3>👨‍👩‍👧 Family Bonds</h3>
+<p>
+Turn your family moments into forever memories with premium creative designs.
+</p>
+</div>
+</div>
+
+<div class="card">
+<img src="arnab.jpeg" alt="Custom handcrafted creative gift with frames and resin art" loading="lazy">
+<div class="card-content">
+<h3>🎁 Creative Gifts</h3>
+<p>
+Custom frames, resin art and handcrafted surprise gifts filled with emotions.
+</p>
+</div>
+</div>
+
+<div class="card">
+<img src="0001.jpeg" alt="Premium personalized memory magazine storybook with unforgettable moments" loading="lazy">
+<div class="card-content">
+<h3>📖 Memory Magazine</h3>
+<p>
+Storybook styled personalized magazines made with your unforgettable memories.
+</p>
+</div>
+</div>
+
+<div class="card">
+<img src="wall stc.jpeg" alt="Aesthetic emotional wall art and decorative stickers for home spaces" loading="lazy">
+<div class="card-content">
+<h3>🎨 Wall Art & Stickers</h3>
+<p>
+Decorate your space with emotional wall designs and aesthetic memories.
+</p>
+</div>
+</div>
+<!-- LIPPAN ART -->
+
+<div class="card">
+<img src="la2.webp" alt="Premium handmade Lippan mirror art with traditional designs" loading="lazy">
+<div class="card-content">
+<h3>🪞 Lippan Art</h3>
+<p>
+Premium handmade Lippan mirror art designs for home decoration and gifting.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- PHOTO FRAMES -->
+
+<div class="card">
+<img src="photo frame.jpg" alt="Customized emotional photo frames with beautiful memory designs" loading="lazy">
+<div class="card-content">
+<h3>🖼️ Photo Frames</h3>
+<p>
+Customized emotional photo frames crafted beautifully with your memories.
+</p>
+</div>
+</div>
+
+<!-- FLEX & BANNERS -->
+
+<div class="card">
+<img src="Banner.jpg" alt="Creative flex and birthday banners with custom event designs" loading="lazy">
+<div class="card-content">
+<h3>🎨 Flex & Banner Design</h3>
+<p>
+Creative flex, birthday banners, wedding banners and custom event designs.
+</p>
+</div>
+</div>
+
+<!-- TROPHIES -->
+
+<div class="card">
+<img src="05.jpeg" alt="Premium customized trophies and award gifts for special moments" loading="lazy">
+<div class="card-content">
+<h3>🏆 Customized Trophies</h3>
+<p>
+Premium customized trophies and award gifts designed for special moments.
+</p>
+</div>
+</div>
+
+<!-- RESIN ART -->
+
+<div class="card">
+<img src="resign.jpeg" alt="Aesthetic resin art with preserved flowers and emotional designs" loading="lazy">
+<div class="card-content">
+<h3>✨ Resin Art</h3>
+<p>
+Aesthetic resin art creations made with flowers, memories and emotions.
+</p>
+</div>
+</div>
+
+<!-- CUSTOM GIFTS -->
+
+<div class="card">
+<img src="gift box.jpg" alt="Romantic surprise gift boxes with handcrafted memory collections" loading="lazy">
+<div class="card-content">
+<h3>🎁 Surprise Gift Boxes</h3>
+<p>
+Romantic surprise boxes and emotional handcrafted memory gift collections.
+</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- FEEDBACK -->
+
+<section class="feedback-section">
+
+<h2 class="section-title">
+✨ What clients say
+</h2>
+
+<div class="feedback-grid">
+
+<div class="feedback-card">
+<p>“Emorixia turned our wedding story into a dreamy keepsake. Every detail feels handmade and full of love.”</p>
+<div class="feedback-rating">
+<span>★★★★★</span>
+<small>5.0</small>
+</div>
+<div class="feedback-author">
+<span>Priya & Arjun</span>
+<span>Wedding keepsake</span>
+</div>
+</div>
+
+<div class="feedback-card">
+<p>“The surprise gift box was perfect. The personalized design made the whole moment magical and emotional.”</p>
+<div class="feedback-rating">
+<span>★★★★★</span>
+<small>5.0</small>
+</div>
+<div class="feedback-author">
+<span>Sneha</span>
+<span>Surprise gift box</span>
+</div>
+</div>
+
+<div class="feedback-card">
+<p>“Their custom memory magazine is so beautiful. It looks handcrafted and brings back all our best memories.”</p>
+<div class="feedback-rating">
+<span>★★★★★</span>
+<small>5.0</small>
+</div>
+<div class="feedback-author">
+<span>Rohit</span>
+<span>Memory magazine</span>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section id="gallery">
+
+<h2 class="section-title">
+✨ Our Memory Gallery
+</h2>
+<div class="gallery">
+
+<img src="Romantic Happy Birthday Wishes Your Story/11.png" alt="Romantic birthday wishes memory design" loading="lazy">
+<img src="IMG-20250216-WA0040.jpg" alt="Memory gallery photo" loading="lazy">
+<img src="28.04.2004/22.png" alt="Aesthetic memory magazine design" loading="lazy">
+<img src="IMG_7973 - Copy.JPG" alt="Handcrafted memory keepsake" loading="lazy">
+<img src="IMG-20250214-WA0107.jpg" alt="Memory gift presentation" loading="lazy">
+<img src="IMG-20250214-WA0158.jpg" alt="Emotional keepsake design" loading="lazy">
+<img src="group.jpeg" alt="Group memory moment" loading="lazy">
+<img src="IMG-20250214-WA0056.jpg" alt="Memory gift photography" loading="lazy">
+
+</div>
+
+</section>
+
+<!-- WHY -->
+
+<section>
+
+<div class="why">
+
+<h2 class="section-title">
+💫 Why Emorixia?
+</h2>
+
+<p>
+
+Every memory deserves more than just a photo ❤️<br><br>
+
+At Emorixia, we transform your emotions into premium magazines,
+aesthetic edits, handmade gifts and forever memories ✨
+
+</p>
+
+<p class="texture-info">
+Our magazines use a curated range of textured, archival papers (cotton, linen, natural) to give each issue a premium, handcrafted touch — a tactile difference you can feel.
+</p>
+
+<br><br>
+
+<h2>
+“You give us memories…<br>
+We give them forever 💖”
+</h2>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<div class="contact-box">
+
+<h2 class="section-title">
+📢 Contact Emorixia
+</h2>
+
+<p style="font-size:20px; margin-bottom:20px;">
+Get in touch to order or inquire about custom creations
+</p>
+
+<form class="contact-form" id="contactForm">
+    <div class="form-group">
+        <label for="name">Your Name *</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+        <label for="phone">Phone Number (Optional)</label>
+        <input type="tel" id="phone" name="phone">
+    </div>
+
+    <div class="form-group">
+        <label for="service">Service Interested In</label>
+        <input type="text" id="service" name="service" placeholder="e.g., Memory Magazine, Custom Gift">
+    </div>
+
+    <div class="form-group">
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" required placeholder="Tell us about your memory or requirement..."></textarea>
+    </div>
+
+    <button type="submit" class="submit-btn">Send Message</button>
+    <div id="formMessage" class="form-message"></div>
+</form>
+
+<div class="contact-buttons">
+
+<p style="font-size:18px; margin-top:30px; font-weight:600;">
+📞 WhatsApp: 7848807515
+</p>
+
+<a href="https://wa.me/917848807515" target="_blank" class="btn btn-main" style="margin-top:15px;">
+💬 Chat on WhatsApp
+</a>
+
+<a href="https://instagram.com/thesairajj" target="_blank" class="btn btn-main" style="margin-top:10px;">
+📸 Instagram
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- NEWSLETTER -->
+
+<section style="padding:0 8%;">
+
+<div class="newsletter-section">
+
+<h2>✨ Never Miss an Update</h2>
+
+<p>Get exclusive offers, new designs, and memory-making tips straight to your inbox!</p>
+
+<form class="newsletter-form" id="newsletterForm">
+    <input type="email" id="newsletterEmail" placeholder="Enter your email" required>
+    <button type="submit">Subscribe</button>
+</form>
+
+<div id="newsletterMessage" class="newsletter-message"></div>
+
+</div>
+
+</section>
+
+<!-- FAQ -->
+
+<section>
+
+<h2 class="section-title">
+❓ Frequently Asked Questions
+</h2>
+
+<div class="faq-container">
+
+<div class="faq-item">
+    <div class="faq-question">
+        <span>How long does delivery take?</span>
+        <span class="faq-icon">▼</span>
+    </div>
+    <div class="faq-answer">
+        <p>Delivery typically takes 5-7 business days after order confirmation. Rush delivery options are available - contact us on WhatsApp for details.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <div class="faq-question">
+        <span>Can I customize the designs?</span>
+        <span class="faq-icon">▼</span>
+    </div>
+    <div class="faq-answer">
+        <p>Absolutely! All our products are customizable. Share your photos, stories, and preferences during the ordering process.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <div class="faq-question">
+        <span>What paper quality do you use?</span>
+        <span class="faq-icon">▼</span>
+    </div>
+    <div class="faq-answer">
+        <p>We use premium textured papers including cotton, linen, and natural finishes for a tactile, luxurious feel that lasts forever.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <div class="faq-question">
+        <span>Do you ship outside Odisha?</span>
+        <span class="faq-icon">▼</span>
+    </div>
+    <div class="faq-answer">
+        <p>Yes! We ship all across India. Contact us on WhatsApp to discuss shipping costs and timelines for your location.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <div class="faq-question">
+        <span>What's the minimum order quantity?</span>
+        <span class="faq-icon">▼</span>
+    </div>
+    <div class="faq-answer">
+        <p>Most products are available as single units. For bulk orders (corporate gifts, events), we offer special discounts - DM us!</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <div class="faq-question">
+        <span>How do I place an order?</span>
+        <span class="faq-icon">▼</span>
+    </div>
+    <div class="faq-answer">
+        <p>Simply message us on WhatsApp or use our contact form. Share your requirements, and we'll guide you through the customization and payment process.</p>
+    </div>
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<h2>💖 Emorixia.in</h2>
+
+<br>
+
+<p>
+© 2026 All Rights Reserved
+</p>
+
+<br>
+
+<p>
+Designed by
+<a href="https://instagram.com/thesairajj" target="_blank">
+@thesairajj
+</a>
+</p>
+
+</footer>
+
+<!-- IMAGE POPUP -->
+
+<div id="imagePopup" class="image-popup">
+
+<span onclick="closeImage()">&times;</span>
+
+<div class="zoom-controls">
+
+<button onclick="zoomIn()">+</button>
+
+<button onclick="zoomOut()">−</button>
+
+<button onclick="resetZoom()">Reset</button>
+
+</div>
+
+<img id="popupImg">
+
+</div>
+
+<script>
+
+/* HAMBURGER MENU TOGGLE */
+
+const hamburger = document.getElementById('hamburger');
+const nav = document.querySelector('.site-nav');
+
+hamburger.addEventListener('click', function(){
+    hamburger.classList.toggle('active');
+    nav.classList.toggle('mobile-active');
+});
+
+// Close menu when a link is clicked
+document.querySelectorAll('.site-nav a').forEach(link => {
+    link.addEventListener('click', function(){
+        hamburger.classList.remove('active');
+        nav.classList.remove('mobile-active');
+    });
+});
+
+/* CONTACT FORM */
+
+const contactForm = document.getElementById('contactForm');
+const formMessage = document.getElementById('formMessage');
+
+contactForm.addEventListener('submit', async function(e){
+    e.preventDefault();
+    
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const service = document.getElementById('service').value;
+    const message = document.getElementById('message').value;
+    
+    // Prepare email data
+    const emailData = {
+        name: name,
+        email: email,
+        phone: phone,
+        service: service,
+        message: message
+    };
+    
+    try {
+        // Using Formspree service (update with your Formspree form ID)
+        // First, replace 'YOUR_FORMSPREE_ID' with your actual Formspree form ID
+        const response = await fetch('https://formspree.io/f/YOUR_FORMSPREE_ID', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify(emailData)
+        });
+        
+        if (response.ok) {
+            formMessage.classList.add('success');
+            formMessage.classList.remove('error');
+            formMessage.textContent = '✅ Message sent successfully! We\'ll get back to you soon.';
+            contactForm.reset();
+        } else {
+            throw new Error('Form submission failed');
+        }
+    } catch (error) {
+        formMessage.classList.add('error');
+        formMessage.classList.remove('success');
+        formMessage.textContent = '❌ Error sending message. Please try WhatsApp instead.';
+        console.error('Error:', error);
+    }
+});
+
+/* FAQ ACCORDION */
+
+const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    
+    question.addEventListener('click', function(){
+        // Close other open FAQs
+        faqItems.forEach(otherItem => {
+            if(otherItem !== item){
+                otherItem.classList.remove('active');
+            }
+        });
+        
+        // Toggle current FAQ
+        item.classList.toggle('active');
+    });
+});
+
+/* NEWSLETTER SIGNUP */
+
+const newsletterForm = document.getElementById('newsletterForm');
+const newsletterMessage = document.getElementById('newsletterMessage');
+
+newsletterForm.addEventListener('submit', async function(e){
+    e.preventDefault();
+    
+    const email = document.getElementById('newsletterEmail').value;
+    
+    try {
+        // Using Formspree or your email service
+        // Replace 'YOUR_NEWSLETTER_FORM_ID' with your actual form ID
+        const response = await fetch('https://formspree.io/f/YOUR_NEWSLETTER_FORM_ID', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+                email: email,
+                type: 'newsletter'
+            })
+        });
+        
+        if (response.ok) {
+            newsletterMessage.classList.add('show');
+            newsletterMessage.style.color = '#fff';
+            newsletterMessage.textContent = '✅ Thanks for subscribing! Check your email.';
+            newsletterForm.reset();
+            
+            setTimeout(() => {
+                newsletterMessage.classList.remove('show');
+            }, 3000);
+        } else {
+            throw new Error('Subscription failed');
+        }
+    } catch (error) {
+        newsletterMessage.classList.add('show');
+        newsletterMessage.style.color = '#ff9999';
+        newsletterMessage.textContent = '❌ Error subscribing. Try again!';
+        console.error('Error:', error);
+    }
+});
+
+/* IMAGE POPUP */
+
+let images = document.querySelectorAll(".card img, .gallery img");
+
+let popup = document.getElementById("imagePopup");
+let popupImg = document.getElementById("popupImg");
+
+let scale = 1;
+let posX = 0;
+let posY = 0;
+
+let isDragging = false;
+
+let startX;
+let startY;
+
+/* OPEN IMAGE */
+
+images.forEach(function(img){
+
+    img.addEventListener("click", function(){
+
+        popup.style.display = "flex";
+
+        popupImg.src = this.src;
+
+        scale = 1;
+        posX = 0;
+        posY = 0;
+
+        updateTransform();
+
+    });
+
+});
+
+/* CLOSE */
+
+function closeImage(){
+
+    popup.style.display = "none";
+
+}
+
+/* UPDATE TRANSFORM */
+
+function updateTransform(){
+
+    popupImg.style.transform =
+    `translate(${posX}px, ${posY}px) scale(${scale})`;
+
+}
+
+/* ZOOM IN */
+
+function zoomIn(){
+
+    scale += 0.2;
+
+    updateTransform();
+
+}
+
+/* ZOOM OUT */
+
+function zoomOut(){
+
+    if(scale > 0.4){
+
+        scale -= 0.2;
+
+        updateTransform();
+
+    }
+
+}
+
+/* RESET */
+
+function resetZoom(){
+
+    scale = 1;
+    posX = 0;
+    posY = 0;
+
+    updateTransform();
+
+}
+
+/* SCROLL ZOOM */
+
+popupImg.addEventListener("wheel", function(e){
+
+    e.preventDefault();
+
+    if(e.deltaY < 0){
+
+        scale += 0.1;
+
+    }else{
+
+        scale -= 0.1;
+
+    }
+
+    if(scale < 0.4){
+
+        scale = 0.4;
+
+    }
+
+    updateTransform();
+
+});
+
+/* DRAG IMAGE */
+
+popupImg.addEventListener("mousedown", function(e){
+
+    isDragging = true;
+
+    startX = e.clientX - posX;
+    startY = e.clientY - posY;
+
+    popupImg.style.cursor = "grabbing";
+
+});
+
+document.addEventListener("mousemove", function(e){
+
+    if(!isDragging) return;
+
+    posX = e.clientX - startX;
+    posY = e.clientY - startY;
+
+    updateTransform();
+
+});
+
+document.addEventListener("mouseup", function(){
+
+    isDragging = false;
+
+    popupImg.style.cursor = "grab";
+
+});
+
+</script>
+
+</body>
+</html>
