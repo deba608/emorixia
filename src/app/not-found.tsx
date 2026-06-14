@@ -18,7 +18,7 @@ export default function NotFound() {
       </h1>
       
       <p className="text-muted-foreground text-sm sm:text-base leading-relaxed">
-        We couldn't find the page you are looking for. It might have been moved, deleted, or never existed. Let's guide you back to safety.
+        We couldn&apos;t find the page you are looking for. It might have been moved, deleted, or never existed. Let&apos;s guide you back to safety.
       </p>
 
       <div className="pt-2">

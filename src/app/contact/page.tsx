@@ -21,7 +21,7 @@ export default function ContactPage() {
           Get In Touch
         </span>
         <h1 className="font-heading text-4xl sm:text-5xl font-bold text-foreground">
-          Let's Start Creating
+          Let&apos;s Start Creating
         </h1>
         <p className="text-muted-foreground text-base sm:text-lg">
           Have an idea for a customized anniversary book, resin rose preservation, or a banner? Drop us an email request or chat directly on WhatsApp.

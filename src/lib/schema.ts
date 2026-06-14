@@ -14,7 +14,7 @@ export const contactFormSchema = z.object({
     "Flex and Banner Design",
     "Other Custom Keepsake"
   ], {
-    errorMap: () => ({ message: "Please select a valid product category." })
+    message: "Please select a valid product category."
   }),
   message: z.string().min(10, { message: "Message must be at least 10 characters." }),
 });

@@ -22,7 +22,7 @@ export default function PrivacyPolicyPage() {
       <section className="flex flex-col gap-4">
         <h2 className="font-heading text-2xl font-bold text-foreground">1. Introduction</h2>
         <p className="text-muted-foreground leading-relaxed">
-          Welcome to Emorixia ("we," "our," "us"). We respect your privacy and are committed to protecting the personal data you share with us. This Privacy Policy describes how we collect, use, and store your information when you visit our website, submit inquiries, or order customized memory gifts.
+          Welcome to Emorixia (&ldquo;we,&rdquo; &ldquo;our,&rdquo; &ldquo;us&rdquo;). We respect your privacy and are committed to protecting the personal data you share with us. This Privacy Policy describes how we collect, use, and store your information when you visit our website, submit inquiries, or order customized memory gifts.
         </p>
       </section>
 

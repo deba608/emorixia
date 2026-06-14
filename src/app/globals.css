@@ -1,37 +1,47 @@
 @import "tailwindcss";
 
 :root {
-  --background: #FFF8FB;
-  --foreground: #222222;
-  --primary: #FF4B7D;
-  --primary-hover: #E03E6C;
-  --secondary: #FFE5EF;
-  --accent: #F8D6E3;
+  --background: #FDFBFC;
+  --foreground: #1C1217;
+  --primary: #D9457A;
+  --primary-hover: #C23B6B;
+  --secondary: #FCE8EE;
+  --accent: #F5D0DA;
   --card: #FFFFFF;
-  --card-foreground: #222222;
-  --border: rgba(255, 75, 125, 0.12);
-  --muted: #F9EBF0;
-  --muted-foreground: #706065;
+  --card-foreground: #1C1217;
+  --border: rgba(217, 69, 122, 0.10);
+  --muted: #F3E8ED;
+  --muted-foreground: #6B5560;
   --popover: #FFFFFF;
-  --popover-foreground: #222222;
-  --ring: rgba(255, 75, 125, 0.3);
+  --popover-foreground: #1C1217;
+  --ring: rgba(217, 69, 122, 0.25);
+
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.03);
+  --shadow-md: 0 2px 8px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.03);
+  --shadow-lg: 0 4px 16px rgba(0,0,0,0.06), 0 2px 4px rgba(0,0,0,0.03);
+  --shadow-xl: 0 8px 32px rgba(0,0,0,0.08), 0 2px 8px rgba(0,0,0,0.04);
 }
 
 .dark {
-  --background: #0F090B;
-  --foreground: #FDF8FA;
-  --primary: #FF4B7D;
-  --primary-hover: #FF6C96;
-  --secondary: #251318;
-  --accent: #3D1C25;
-  --card: #160E11;
-  --card-foreground: #FDF8FA;
-  --border: rgba(255, 75, 125, 0.2);
-  --muted: #1F1317;
-  --muted-foreground: #B5A0A6;
-  --popover: #160E11;
-  --popover-foreground: #FDF8FA;
-  --ring: rgba(255, 75, 125, 0.5);
+  --background: #0F0C0E;
+  --foreground: #F0EBED;
+  --primary: #E85A8F;
+  --primary-hover: #F07AA6;
+  --secondary: #1C1519;
+  --accent: #261D22;
+  --card: #151214;
+  --card-foreground: #F0EBED;
+  --border: rgba(232, 90, 143, 0.12);
+  --muted: #1A1618;
+  --muted-foreground: #9E8D95;
+  --popover: #151214;
+  --popover-foreground: #F0EBED;
+  --ring: rgba(232, 90, 143, 0.35);
+
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.2);
+  --shadow-md: 0 2px 8px rgba(0,0,0,0.25), 0 1px 2px rgba(0,0,0,0.15);
+  --shadow-lg: 0 4px 16px rgba(0,0,0,0.3), 0 2px 4px rgba(0,0,0,0.2);
+  --shadow-xl: 0 8px 32px rgba(0,0,0,0.4), 0 2px 8px rgba(0,0,0,0.2);
 }
 
 @theme inline {
@@ -67,77 +77,36 @@ body {
   color: var(--foreground);
   font-family: var(--font-inter), sans-serif;
   overflow-x: hidden;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Glassmorphism Classes */
-.glass {
-  background: rgba(255, 248, 251, 0.7);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 75, 125, 0.08);
-}
-
-.dark .glass {
-  background: rgba(15, 9, 11, 0.7);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 75, 125, 0.15);
-}
-
-/* Premium Scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--background);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--accent);
-  border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
+::selection {
   background: var(--primary);
+  color: white;
 }
 
-/* Masonry Grid Styles */
-.masonry-grid {
-  display: flex;
-  margin-left: -20px;
-  width: auto;
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--primary); }
+
+.text-balance { text-wrap: balance; }
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--primary), var(--primary-hover));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-.masonry-grid_column {
-  padding-left: 20px;
-  background-clip: padding-box;
-}
+.masonry-grid { display: flex; margin-left: -20px; width: auto; }
+.masonry-grid_column { padding-left: 20px; background-clip: padding-box; }
 
-/* Floating Images animations */
 @keyframes float {
-  0% {
-    transform: translateY(0px) rotate(0deg);
-  }
-
-  50% {
-    transform: translateY(-10px) rotate(1deg);
-  }
-
-  100% {
-    transform: translateY(0px) rotate(0deg);
-  }
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(0.5deg); }
 }
-
-.animate-float-slow {
-  animation: float 6s ease-in-out infinite;
-}
-
-.animate-float-medium {
-  animation: float 4s ease-in-out infinite;
-}
-
-.animate-float-fast {
-  animation: float 3s ease-in-out infinite;
-}
+.animate-float-slow   { animation: float 6s ease-in-out infinite; }
+.animate-float-medium { animation: float 4.5s ease-in-out infinite; }
+.animate-float-fast   { animation: float 3s ease-in-out infinite; }

@@ -68,7 +68,7 @@ Message: ${message}`);
       success: true,
       message: "✅ Thank you! Your memory gift inquiry has been submitted. We will contact you soon."
     };
-  } catch (err: any) {
+  } catch (err: unknown) {
     console.error("Server Action Exception:", err);
     return {
       success: false,
