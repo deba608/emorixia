@@ -156,7 +156,7 @@ export default function HomePage() {
   return (
     <div className="flex flex-col overflow-x-hidden">
       {/* Hero */}
-      <section className="relative min-h-[calc(100vh-72px)] flex items-center justify-center px-6 md:px-12">
+      <section className="relative min-h-[calc(100vh-80px)] flex items-center justify-center px-6 md:px-12">
         <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
           <div className="absolute top-1/3 right-1/4 w-[30vw] h-[30vw] bg-secondary/40 rounded-full blur-[120px]" />
           <div className="absolute bottom-1/4 left-1/4 w-[25vw] h-[25vw] bg-accent/30 rounded-full blur-[100px]" />

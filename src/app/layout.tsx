@@ -87,7 +87,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       </head>
       <body className="min-h-screen flex flex-col">
         <Navbar />
-        <main className="flex-grow pt-[72px]">{children}</main>
+        <main className="flex-grow pt-[80px]">{children}</main>
         <Footer />
         <WhatsAppWidget />
       </body>

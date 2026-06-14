@@ -70,7 +70,7 @@ Here are my details:
   };
 
   return (
-    <div className="w-full max-w-xl mx-auto bg-card border border-border/40 rounded-3xl p-6 md:p-8 shadow-sm">
+    <div className="w-full max-w-xl mx-auto bg-card border border-border/40 rounded-2xl p-6 md:p-8 shadow-sm">
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
         {/* Name */}
         <div className="flex flex-col gap-1.5 text-left">
@@ -183,7 +183,7 @@ Here are my details:
           <button
             type="submit"
             disabled={loading}
-            className="flex-1 bg-primary hover:bg-primary-hover text-white py-3.5 px-6 rounded-full font-semibold text-sm transition-all shadow-md shadow-primary/10 flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50"
+            className="flex-1 bg-primary hover:bg-primary-hover text-white py-3.5 px-6 rounded-xl font-semibold text-sm transition-all shadow-md shadow-primary/10 flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50"
           >
             <Send className="h-4 w-4" />
             <span>{loading ? "Sending inquiry..." : "Send Inquiry"}</span>
@@ -194,7 +194,7 @@ Here are my details:
             href={getWhatsAppLink()}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 border border-primary/25 hover:border-primary/50 bg-secondary text-primary hover:bg-primary/10 py-3.5 px-6 rounded-full font-bold text-sm transition-all flex items-center justify-center gap-2"
+            className="flex-1 border border-primary/25 hover:border-primary/50 bg-secondary text-primary hover:bg-primary/10 py-3.5 px-6 rounded-xl font-bold text-sm transition-all flex items-center justify-center gap-2"
           >
             <MessageSquare className="h-4 w-4 text-primary" />
             <span>Order on WhatsApp</span>
