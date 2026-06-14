@@ -36,8 +36,6 @@ export function Navbar() {
     return () => { document.body.style.overflow = ""; };
   }, [isOpen]);
 
-  useEffect(() => { setIsOpen(false); }, [pathname]);
-
   return (
     <>
       <header

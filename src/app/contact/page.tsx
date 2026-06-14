@@ -17,7 +17,7 @@ export default function ContactPage() {
     <div className="max-w-7xl mx-auto px-6 md:px-12 py-16 flex flex-col gap-16">
       {/* Header section */}
       <div className="text-center flex flex-col items-center gap-4 max-w-2xl mx-auto">
-        <span className="text-xs font-bold tracking-widest text-primary uppercase bg-secondary px-3.5 py-1.5 rounded-full">
+        <span className="text-xs font-bold tracking-[0.15em] text-primary uppercase bg-secondary px-3.5 py-1.5 rounded-lg">
           Get In Touch
         </span>
         <h1 className="font-heading text-4xl sm:text-5xl font-bold text-foreground">
@@ -79,18 +79,18 @@ export default function ContactPage() {
               href="https://wa.me/917848807515"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-primary hover:bg-primary-hover text-white px-6 py-3 rounded-full font-bold text-sm shadow-md transition-colors flex items-center gap-2"
+              className="bg-primary hover:bg-primary-hover text-white px-6 py-3 rounded-xl font-bold text-sm shadow-md transition-colors flex items-center gap-2"
             >
-              <MessageSquare className="h-4.5 w-4.5" />
+              <MessageSquare className="h-4 w-4" />
               <span>WhatsApp Chat</span>
             </a>
             <a
               href="https://instagram.com/thesairajj"
               target="_blank"
               rel="noopener noreferrer"
-              className="border border-border/40 hover:border-primary bg-card px-6 py-3 rounded-full font-semibold text-sm transition-all flex items-center gap-2"
+              className="border border-border hover:border-primary bg-card px-6 py-3 rounded-xl font-semibold text-sm transition-all flex items-center gap-2"
             >
-              <InstagramIcon className="h-4.5 w-4.5 text-primary" />
+              <InstagramIcon className="h-4 w-4 text-primary" />
               <span>Instagram Page</span>
             </a>
           </div>

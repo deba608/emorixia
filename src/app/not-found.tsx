@@ -24,7 +24,7 @@ export default function NotFound() {
       <div className="pt-2">
         <Link
           href="/"
-          className="inline-flex items-center gap-2 bg-primary hover:bg-primary-hover text-white px-7 py-3.5 rounded-full font-bold text-sm shadow-md transition-all transform hover:-translate-y-0.5"
+          className="inline-flex items-center gap-2 bg-primary hover:bg-primary-hover text-white px-7 py-3.5 rounded-xl font-bold text-sm shadow-md transition-all"
         >
           <Home className="h-4 w-4" />
           <span>Return to Homepage</span>

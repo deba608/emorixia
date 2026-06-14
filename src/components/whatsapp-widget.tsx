@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { MessageSquare, X, Send, Sparkles } from "lucide-react";
+import { MessageSquare, X, Send, Sparkles, FileText, Flower2, Grid3x3 } from "lucide-react";
 
 export function WhatsAppWidget() {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,7 +42,7 @@ export function WhatsAppWidget() {
             initial={{ opacity: 0, y: 10, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 10, scale: 0.95 }}
-            className="bg-card border border-primary/20 shadow-lg px-4 py-2.5 rounded-2xl text-xs font-medium text-foreground max-w-[220px] text-right relative glass"
+            className="bg-card border border-primary/20 shadow-lg px-4 py-2.5 rounded-2xl text-xs font-medium text-foreground max-w-[220px] text-right relative"
           >
             <button
               onClick={() => setShowTooltip(false)}
@@ -72,7 +72,7 @@ export function WhatsAppWidget() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 30, scale: 0.92 }}
             transition={{ type: "spring", damping: 25, stiffness: 250 }}
-            className="w-[330px] sm:w-[360px] bg-card border border-border/40 rounded-[2rem] overflow-hidden shadow-2xl z-50 glass"
+            className="w-[330px] sm:w-[360px] bg-card border border-border/40 rounded-[2rem] overflow-hidden shadow-2xl z-50"
           >
             {/* Chat Header */}
             <div className="bg-primary text-white p-6 relative flex items-center gap-4">
@@ -105,7 +105,7 @@ export function WhatsAppWidget() {
                   EM
                 </div>
                 <div className="bg-muted px-4 py-3 rounded-2xl rounded-tl-none text-sm leading-relaxed text-muted-foreground">
-                  Hello! 💖 Thank you for visiting Emorixia. How can we help you craft your memories today?
+                  Hello! Thank you for visiting Emorixia. How can we help you craft your memories today?
                 </div>
               </div>
 
@@ -113,21 +113,24 @@ export function WhatsAppWidget() {
               <div className="flex flex-col gap-2 pl-10">
                 <button
                   onClick={() => handleQuickQuestion("Hi, I want to order a customized Memory Magazine. Can you share details?")}
-                  className="text-xs text-left bg-card hover:bg-secondary/40 border border-border/50 hover:border-primary/20 text-foreground px-4 py-2.5 rounded-xl transition-all duration-300 font-medium"
+                  className="flex items-center gap-2 text-xs text-left bg-card hover:bg-secondary/40 border border-border/50 hover:border-primary/20 text-foreground px-4 py-2.5 rounded-xl transition-all duration-300 font-medium"
                 >
-                  📖 Order a Memory Magazine
+                  <FileText className="h-3.5 w-3.5 text-primary shrink-0" />
+                  Order a Memory Magazine
                 </button>
                 <button
                   onClick={() => handleQuickQuestion("Hi, I'm interested in designing a floral preservation Resin Art tray. How does it work?")}
-                  className="text-xs text-left bg-card hover:bg-secondary/40 border border-border/50 hover:border-primary/20 text-foreground px-4 py-2.5 rounded-xl transition-all duration-300 font-medium"
+                  className="flex items-center gap-2 text-xs text-left bg-card hover:bg-secondary/40 border border-border/50 hover:border-primary/20 text-foreground px-4 py-2.5 rounded-xl transition-all duration-300 font-medium"
                 >
-                  🌸 Flower Preservation Resin Art
+                  <Flower2 className="h-3.5 w-3.5 text-primary shrink-0" />
+                  Flower Preservation Resin Art
                 </button>
                 <button
                   onClick={() => handleQuickQuestion("Hi, I want to inquire about custom home decor Lippan Art mirror plates.")}
-                  className="text-xs text-left bg-card hover:bg-secondary/40 border border-border/50 hover:border-primary/20 text-foreground px-4 py-2.5 rounded-xl transition-all duration-300 font-medium"
+                  className="flex items-center gap-2 text-xs text-left bg-card hover:bg-secondary/40 border border-border/50 hover:border-primary/20 text-foreground px-4 py-2.5 rounded-xl transition-all duration-300 font-medium"
                 >
-                  ✨ Symmetrical Lippan Wall Art
+                  <Grid3x3 className="h-3.5 w-3.5 text-primary shrink-0" />
+                  Symmetrical Lippan Wall Art
                 </button>
               </div>
             </div>

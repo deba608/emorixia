@@ -55,13 +55,13 @@ export function NewsletterForm() {
             type="email"
             placeholder="Enter your email address"
             {...register("email")}
-            className="w-full px-5 py-3.5 rounded-full border border-white/20 bg-white/10 text-white placeholder-white/60 text-sm focus:outline-none focus:ring-2 focus:ring-white/40 focus:border-white/40 transition-all"
+            className="w-full px-5 py-3.5 rounded-xl border border-white/20 bg-white/10 text-white placeholder-white/60 text-sm focus:outline-none focus:ring-2 focus:ring-white/40 focus:border-white/40 transition-all"
           />
         </div>
         <button
           type="submit"
           disabled={loading}
-          className="px-8 py-3.5 rounded-full bg-white text-primary hover:bg-white/95 font-bold text-sm transition-all transform hover:-translate-y-0.5 shadow-md disabled:opacity-50 flex-shrink-0 cursor-pointer"
+          className="px-8 py-3.5 rounded-xl bg-white text-primary hover:bg-white/95 font-bold text-sm transition-all shadow-md disabled:opacity-50 flex-shrink-0 cursor-pointer"
         >
           {loading ? "Subscribing..." : "Subscribe"}
         </button>

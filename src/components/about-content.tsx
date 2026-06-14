@@ -196,21 +196,21 @@ export function AboutContent() {
         <p className="text-muted-foreground text-base leading-relaxed">
           Have a unique idea? A romantic memory book, a custom resin art, or a traditional mirror panel? Let&apos;s design it together.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 w-full justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 w-full justify-center">
           <a
             href="https://wa.me/917848807515"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-primary hover:bg-primary-hover text-white px-7 py-3 rounded-full font-bold text-sm shadow-md transition-colors flex items-center justify-center gap-2"
+            className="bg-primary hover:bg-primary-hover text-white px-7 py-3 rounded-xl font-bold text-sm shadow-md transition-colors flex items-center justify-center gap-2"
           >
-            <MessageSquare className="h-4.5 w-4.5" />
+            <MessageSquare className="h-4 w-4" />
             <span>Chat on WhatsApp</span>
           </a>
           <a
             href="/contact"
-            className="border border-border/40 hover:border-primary bg-card px-7 py-3 rounded-full font-semibold text-sm transition-all flex items-center justify-center gap-2"
+            className="border border-border hover:border-primary bg-card px-7 py-3 rounded-xl font-semibold text-sm transition-all flex items-center justify-center gap-2"
           >
-            <Mail className="h-4.5 w-4.5 text-primary" />
+            <Mail className="h-4 w-4 text-primary" />
             <span>Fill Contact Form</span>
           </a>
         </div>
